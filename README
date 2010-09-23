@@ -1,0 +1,14 @@
+
+This embeds V8 in a module, so you can validate javascript files in Ruby.
+
+Basic Example:
+
+require 'V8/V8'
+
+puts V8.compile('some_javascript.js')
+
+
+This will return either false (for no errors) or an array of errors.
+Demo usage is in test.rb
+
+You may have to compile V8 yourself and replace the libv8.a file.
